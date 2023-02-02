@@ -8,7 +8,9 @@ It's currently pulling one row per staking key, but you can pivot in excel to ma
 
 I'll add it to the query itself when I learn how :)
 
+Known issue:
 If querying ergopad staked tokens it's currently pulling 5k+ keys...suspect it includes burnt tokens, if anyone can help, feel free.
+
 EGIO,Paideia and Neta works fine.
 
 You will need access to an explorer psql instance.
