@@ -1,15 +1,22 @@
-# Ergo_Explorer_Queries
+# Ergo Explorer Queries
 
-Very much WIP!
+Right now there's only one query, extracting staked amount in Ergopad contracts. 
 
-Query will pull a list of addresses that are staking on ergopad and the amount.
+You will need access to an Explorer instance to connect to DB.
 
-It's currently pulling one row per staking key, but you can pivot in excel to make a summary table.
+Query will pull a list of addresses in all Ergopad staking contracts:
+  1. Token ID
+  2. Wallet Address
+  3. Current Staked Amount
+  4. Original/Initial staked amount
+  5. Initial Stake date
 
-I'll add it to the query itself when I learn how :)
+It's currently one row per staking key and many addresses have multiple keys.
+Use excel to pivot and analyze by address. 
 
-EGIO,Paideia and Neta query works fine.
+Known Issue:
 
-Ergopad query pulls in a few less tokens than expected (~10) but for the addresses I checked it's correct. It includes burnt tokens (address=NULL)
+Ergopad query pulls in a few less tokens than expected (~10) but for the addresses I checked it's correct. 
+It includes burnt tokens (address=NULL)
 
-You will need access to an explorer psql instance.
+
