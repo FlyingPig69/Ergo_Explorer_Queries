@@ -35,7 +35,7 @@ left join lateral (
   from node_assets
   inner join tokens t on node_assets.token_id = t.token_id
   where node_assets.box_id = node_outputs.box_id
-  and t.name = 'NETA' /** change to 'EGIO', 'NETA', 'Paideia', 'ergopad' as required **/
+  and t.name = 'ergopad' /** change to 'EGIO', 'NETA', 'Paideia', 'ergopad' as required **/
 ) na on node_outputs.box_id = na.box_id 
 
 /* Find staking key ID from contract and extract description */
