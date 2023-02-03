@@ -2,7 +2,7 @@
 
 Very much WIP!
 
-Query will pull a list of addresses that are staking on ergopad. 
+Query will pull a list of addresses that are staking on ergopad and the amount.
 
 It's currently pulling one row per staking key, but you can pivot in excel to make a summary table.
 
