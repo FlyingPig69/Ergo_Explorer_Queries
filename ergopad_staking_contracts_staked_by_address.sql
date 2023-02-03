@@ -29,7 +29,7 @@ left join lateral (
 /* Find amount of tokens stored in contract box */
 left join lateral (
 	select distinct on (node_assets.index, node_assets.token_id, node_assets.box_id)
-    node_assets.value as Staked_Amount,
+   	node_assets.value as Staked_Amount,
 	node_assets.token_id,
 	node_assets.box_id
   from node_assets
