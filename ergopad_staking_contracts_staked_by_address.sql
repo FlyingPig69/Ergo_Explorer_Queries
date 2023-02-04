@@ -1,6 +1,6 @@
 select distinct on (node_outputs.additional_registers::json->'R5'->> 'renderedValue')
 nu.name,
-node_outputs.additional_registers::json->'R5'->> 'renderedValue' as Vesting_Token_id,
+node_outputs.additional_registers::json->'R5'->> 'renderedValue' as Staking_Token_id,
 noa.address,
 na.staked_amount / 100 as Staked_Amount,
 nu.Original_Amount,
