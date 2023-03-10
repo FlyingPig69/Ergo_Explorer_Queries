@@ -2,7 +2,10 @@
 
 Right now there's only one query, extracting staked amount in Ergopad contracts. 
 
-You will need access to an Explorer instance to connect to DB.
+Requirements:
+* You will need access to an Explorer instance to connect to DB.
+ (You can use https://github.com/abchrisxyz/ergo-setup)
+* PGAdmin or similar to run the sqls.
 
 Query will pull a list of addresses in all Ergopad staking contracts:
   1. Token ID
