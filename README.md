@@ -8,6 +8,7 @@ Requirements:
 * PGAdmin or similar to run the sqls.
 
 **Total Value Locked by Smart Contract**:
+
 Shows all smart contracts (I think.....) with their amount of ERG plus USD value plus the following tokens:
 1. SigUSD
 2. SPF
