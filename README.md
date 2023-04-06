@@ -11,11 +11,18 @@ Requirements:
 
 Shows all smart contracts (I think.....) with their amount of ERG plus USD value plus the following tokens:
 1. SigUSD
-2. SPF
-3. NETA
+2. SPF (Spectrum Finance)
+3. NETA (aNetaBTC)
 4. Ergopad
-5. EGIO
+5. EGIO (Ergogames)
 6. Paideia
+7. Thz (Swamp Audio)
+8. EPOS (Ergo POS)
+9. Quacks (Quackpool)
+10. CYPX (Cyberverse)
+11. EXLE (Ergolend)
+12. AHT (AuctionHouse)
+
 
 It's easy to add more which I'll do at a later date...
 
