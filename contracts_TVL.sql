@@ -1,7 +1,6 @@
 /* Flying Pig
 Execute against explorer psql db */
 
-
 select
 case
 	when address = 'MUbV38YgqHy7XbsoXWF5z7EZm524Ybdwe5p9WDrbhruZRtehkRPT92imXer2eTkjwPDfboa1pR3zb3deVKVq3H7Xt98qcTqLuSBSbHb7izzo5jphEpcnqyKJ2xhmpNPVvmtbdJNdvdopPrHHDBbAGGeW7XYTQwEeoRfosXzcDtiGgw97b2aqjTsNFmZk7khBEQywjYfmoDc9nUCJMZ3vbSspnYo3LarLe55mh2Np8MNJqUN9APA6XkhZCrTTDRZb1B4krgFY1sVMswg2ceqguZRvC9pqt3tUUxmSnB24N6dowfVJKhLXwHPbrkHViBv1AKAJTmEaQW2DN1fRmD9ypXxZk8GXmYtxTtrj3BiunQ4qzUCu1eGzxSREjpkFSi2ATLSSDqUwxtRz639sHM6Lav4axoJNPCHbY8pvuBKUxgnGRex8LEGM8DeEJwaJCaoy8dBw9Lz49nq5mSsXLeoC4xpTUmp47Bh7GAZtwkaNreCu74m9rcZ8Di4w1cmdsiK1NWuDh9pJ2Bv7u3EfcurHFVqCkT3P86JUbKnXeNxCypfrWsFuYNKYqmjsix82g9vWcGMmAcu5nagxD4iET86iE2tMMfZZ5vqZNvntQswJyQqv2Wc6MTh4jQx1q2qJZCQe4QdEK63meTGbZNNKMctHQbp3gRkZYNrBtxQyVtNLR8xEY8zGp85GeQKbb37vqLXxRpGiigAdMe3XZA4hhYPmAAU5hpSMYaRAjtvvMT3bNiHRACGrfjvSsEG9G2zY5in2YWz5X9zXQLGTYRsQ4uNFkYoQRCBdjNxGv6R58Xq74zCgt19TxYZ87gPWxkXpWwTaHogG1eps8WXt8QzwJ9rVx6Vu9a5GjtcGsQxHovWmYixgBU8X9fPNJ9UQhYyAWbjtRSuVBtDAmoV1gCBEPwnYVP5GCGhCocbwoYhZkZjFZy6ws4uxVLid3FxuvhWvQrVEDYp7WRvGXbNdCbcSXnbeTrPMey1WPaXX'then 'SigUSD'
@@ -16,6 +15,7 @@ case
 	when address = '9hXmgvzndtakdSAgJ92fQ8ZjuKirWAw8tyDuyJrXP6sKHVpCz8XbMANK3BVJ1k3WD6ovQKTCasjKL5WMncRB6V9HvmMnJ2WbxYYjtLFS9sifDNXJWugrNEgoVK887bR5oaLZA95yGkMeXVfanxpNDZYaXH9KpHCpC5ohDtaW1PF17b27559toGVCeCUNti7LXyXV8fWS1mVRuz2PhLq5mB7hg2bqn7CZtVM8ntbUJpjkHUc9cP1R8Gvbo1GqcNWgM7gZkr2Dp514BrFz1cXMkv7TYEqH3cdxX9c82hH6fdaf3n6avdtZ5bgqerUZVDDW6ZsqxrqTyTMQUUirRAi3odmMGmuMqDJbU3Z1VnCF9NBow7jrKUDSgckDZakFZNChsr5Kq1kQyNitYJUh9fra1jLHCQ9yekz3te9E' then 'Ergopad Emissions'
 	when address = '5ZGAr8o2JnMpF1dVww63EfS6GjpV1sFkVwjAjZFhZXMVXSQTk98pi2AnzAod99QneCNvyuRb3FogtS5mGLprWgq6uFzGgTj3sZRStDDQhU9t983g8wAyBk7Qrpr7EokzJnVrEMsoqpUaqFTX13qTD2FPeDJFPa3yqcGggtki4PNq6St7K6DrHhmStikUbNGHdSqywuRXDiUp1jNgjLAA2M9LmdEUJfPSL7nDcE6UBkfkMRSmAfYPuRS35CfcQMDWmfLJtbzkRP76KZUs4796PxhbX9EVDhEgArAVJgQVxk8skGKCRrrmsYnE4WUgYcSiKY5pGfJXVfoBfiRn6AdYSnFfMcKYqESjM9kb2QBMjYkw5rz95wHxo6CK4EdnkJi7qZJTS39q9DRUoiFZi6dRiRXJtNrJp9JWSbwQjtmubRXqhPy4kwr6uWSSHdy488YpPwxApfch47icQ1cyesN8BDtGY6vYpr69ZaYTQYECSxYHBmWfvyrXKH4ywcF1V9cPsFA5aHsWeyhNdL78vEtjVj8UYHUpR2sVDqGPSUxzJ2YPS2ghPpHm28f3nXhhgdc36S6u9cUJVHiMbCjA4Hk4x4SEHBi96mEwhpeYjcnHgiASgtL7XxDythNbWCt6aXAw7f6o6b5JKqUDooG4iBn7gmBSQQ7WmPKABpLFsWypx' then 'EGIO Emissions'
 	when address = '5ASYVJ2w8tH3bDQx5ZLz6rZUdokD1kmTXSRZ8GfrsAUW4vqy9eg5omtTYVzY22ibHANf7GgSc2E5FiThgo8qXzWpU3RDLohN277hksbAf9yykajXbYPUaXUeMPfSXbS1GdE4y2GoYKaXHR3H57MV5CDZE58YteqWe3XVXzmMvj1192AD7UZ1N6nguRfjgijxEWTrLq2ZrykjRAut2JBGYHanAKn46tYWW3chpxNosXG7ZW2ShDzKju2ttHhfxeZVMBydryuoEya5E9KVagjsfa9E2qPUdLpbh8enppVWcwoQ4GF1ktgzSX32QbfKhfpD23iWQixThUbcCca14FjXDt94GVFPuhAT5tQyiKen863Cq5eRAEgsQ7otX6pWa32Q28sxSF9Az4abwiJKNbFhbhb3cDCs6A45ZnW6aB6AkfwTJSAZ2ZzqqG7LXT4HdxNpdmiwno9sJWxPf2PC4vRhVqBPdxxyCgoodjyutf4UuinSCibhfqdhUJLc1JM8zX9UcD699mChgUZoKE8kXD4soVGSgQD3qfGXC6RP7n8dtowArNLm3H5QJ3EobDCbEgECLHFaHN2BPwwWscAt5eejKeFvkp3CuQ3mqFW7vfQG4n9tTLnshj8cjxnpkBdfFKC83sW8A3AoZAX4K1UrhndfLSFh4w' then 'NETA Staking Contract'
+	when address = 'HNLdwoHRsUSevguzRajzvy1DLAvUJ9YgQezQq6GGZiY4TmU9VDs2ae8mRpQkfEnLmuUKyJibZD2bXR2yoo1p8T5WCRKPn4rJVJ2VR2LvRBk8ViCmhcume5ubWaySXTUqpftEaaURTM6KSFxe4QbRFbToyPzZ3JJmjoDn4WzHh5ioXZMj7AX6xTwJvFmzPuko9BqDk5z1RJtD1wP4kd8sSsLN9P2YNQxmUGDEBYHaDCoAhY7Pg5oKit6ZyqMynoiycWqctfg1EHhMUKCTJsZNnidU961ri98RaYP4CfEwYQ3d9dRVuC6S1n7J1wPPHYqmUBgJCGWbTULayXUowSSmRuZUkQYGo9vvNaEpB7ManiLsX1n8cBYwN4XoVsY24mCfptBP86P4rZ5fgcr9mYtQ9nG934DMDZBbjs81VzCupB6KVrGCe1WtYSr6c1DwkNAinBMwqcqxTznXZUvfBsjDSCtJzCut44xcc7Zsy9mWz2B2pqhdKsX83BVzMDDM5hnjXTShYfauJGs81' then 'Ergopad Vesting Contract'
 	else 'Unknown Contract'
 end Contract_Name,
 
@@ -34,6 +34,8 @@ change usd value (multiplier) at time of running query
 
 coalesce(sum(no.value)/1000000000,0) as ERG_amount,
 coalesce(sum(no.value)/1000000000 * 1.49,0) as ERG_USD, 
+
+coalesce(sum(t_sigUSD.amount)/100,0) as sigUSD_amount,
 	
 coalesce(sum(t_paideia.amount)/10000,0) as paideia_amount, 
 coalesce((sum(t_paideia.amount)/10000 * 0.0032),0) as paideia_USD,
@@ -44,13 +46,29 @@ coalesce((sum(t_egio.amount)/10000)* 0.00009,0) as egio_USD,
 coalesce(sum(t_ergopad.amount)/100,0) as ergopad_amount,
 coalesce((sum(t_ergopad.amount)/100 * 0.006),0) as ergopad_USD,
 
-coalesce(sum(t_spf.amount)/1000000,0) as spf_amount,
-coalesce((sum(t_spf.amount)/1000000 * 0.063),0) as spf_USD,
-
 coalesce(sum(t_neta.amount)/1000000,0) as neta_amount,
 coalesce((sum(t_neta.amount)/1000000 * 0.0034),0) as neta_USD,
 
-coalesce(sum(t_sigUSD.amount)/100,0) as sigUSD_amount,
+coalesce(sum(t_spf.amount)/1000000,0) as spf_amount,
+coalesce((sum(t_spf.amount)/1000000 * 0.063),0) as spf_USD,
+
+coalesce(sum(t_thz.amount)/10000,0) as thz_amount,
+coalesce((sum(t_thz.amount)/10000 * 0.0031),0) as thz_USD,
+
+coalesce(sum(t_epos.amount)/10000,0) as epos_amount,
+coalesce((sum(t_epos.amount)/10000 * 0.0008),0) as epos_USD,
+
+coalesce(sum(t_quacks.amount)/1000000,0) as quacks_amount,
+coalesce((sum(t_quacks.amount)/1000000 * 0.152),0) as quacks_USD,
+
+coalesce(sum(t_cypx.amount)/10000,0) as cypx_amount,
+coalesce((sum(t_cypx.amount)/10000 * 0.0011),0) as cypx_USD,
+
+coalesce(sum(t_exle.amount)/10000,0) as exle_amount,
+coalesce((sum(t_exle.amount)/10000 * 0.0025),0) as exle_USD,
+
+coalesce(sum(t_aht.amount)/10000,0) as aht_amount,
+coalesce((sum(t_aht.amount)/10000 * 0.0009),0) as aht_USD,
 
 no.address
 
@@ -101,7 +119,43 @@ left join(select box_id, node_assets.value as amount
 		 where token_id = '03faf2cb329f2e90d6d23b58d91bbb6c046aa143261cc21f52fbe2824bfcbf04' 
 		 and node_assets.value is not Null) t_sigUSD
 		 on t_sigUSD.box_id=no.box_id
-		 	 
+		 
+left join(select box_id, node_assets.value as amount
+		 from node_assets
+		 where token_id = '02f31739e2e4937bb9afb552943753d1e3e9cdd1a5e5661949cb0cef93f907ea' 
+		 and node_assets.value is not Null) t_thz
+		 on t_thz.box_id=no.box_id
+		 
+left join(select box_id, node_assets.value as amount
+		 from node_assets
+		 where token_id = '00bd762484086cf560d3127eb53f0769d76244d9737636b2699d55c56cd470bf' 
+		 and node_assets.value is not Null) t_epos
+		 on t_epos.box_id=no.box_id
+
+left join(select box_id, node_assets.value as amount
+		 from node_assets
+		 where token_id = '089990451bb430f05a85f4ef3bcb6ebf852b3d6ee68d86d78658b9ccef20074f' 
+		 and node_assets.value is not Null) t_quacks
+		 on t_quacks.box_id=no.box_id
+
+left join(select box_id, node_assets.value as amount
+		 from node_assets
+		 where token_id = '01dce8a5632d19799950ff90bca3b5d0ca3ebfa8aaafd06f0cc6dd1e97150e7f' 
+		 and node_assets.value is not Null) t_cypx
+		 on t_cypx.box_id=no.box_id
+
+left join(select box_id, node_assets.value as amount
+		 from node_assets
+		 where token_id = '007fd64d1ee54d78dd269c8930a38286caa28d3f29d27cadcb796418ab15c283' 
+		 and node_assets.value is not Null) t_exle
+		 on t_exle.box_id=no.box_id
+
+left join(select box_id, node_assets.value as amount
+		 from node_assets
+		 where token_id = '18c938e1924fc3eadc266e75ec02d81fe73b56e4e9f4e268dffffcb30387c42d' 
+		 and node_assets.value is not Null) t_aht
+		 on t_aht.box_id=no.box_id	
+		  	 
 where no.main_chain = true
 and not exists (select box_id from node_inputs ni where no.box_id = ni.box_id)
 and no.address not like '9%%' /* normal wallet addresses */
