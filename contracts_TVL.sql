@@ -1,4 +1,6 @@
-/* To be run against an explorer psql DB */
+/* Flying Pig
+Execute against explorer psql db */
+
 
 select
 case
@@ -19,27 +21,36 @@ end Contract_Name,
 
 /*  
 add new two rows for each token you add, token amount and usd value
-change usd value at time of running query.
+change usd value (multiplier) at time of running query
 */
 
-coalesce(sum(no.value)/1000000000,0) as amount_ERG,
-coalesce(sum(no.value)/1000000000 * 1.464,0) as ERG_USD, 
-coalesce(sum(t_paideia.paideia_amount)/10000,0) as paideia_amount, 
-coalesce((sum(t_paideia.paideia_amount)/10000 * 0.0032),0) as paideia_USD,
+(coalesce(sum(no.value)/1000000000 * 1.49, 0) 
+ + coalesce(sum(t_paideia.amount)/10000 * 0.0032,0)
+ + coalesce(sum(t_egio.amount)/10000* 0.00009,0)
+ + coalesce(sum(t_ergopad.amount)/100 * 0.006,0)
+ + coalesce(sum(t_spf.amount)/1000000 * 0.063,0)
+ + coalesce(sum(t_neta.amount)/1000000 * 0.0034,0)
+ + coalesce(sum(t_sigUSD.amount)/100,0)) as TVL_USD,
 
-coalesce(sum(t_egio.egio_amount)/10000,0) as egio_amount,
-coalesce((sum(t_egio.egio_amount)/10000)* 0.00009,0) as egio_USD,
+coalesce(sum(no.value)/1000000000,0) as ERG_amount,
+coalesce(sum(no.value)/1000000000 * 1.49,0) as ERG_USD, 
+	
+coalesce(sum(t_paideia.amount)/10000,0) as paideia_amount, 
+coalesce((sum(t_paideia.amount)/10000 * 0.0032),0) as paideia_USD,
 
-coalesce(sum(t_ergopad.ergopad_amount)/100,0) as ergopad_amount,
-coalesce((sum(t_ergopad.ergopad_amount)/100 * 0.006),0) as ergopad_USD,
+coalesce(sum(t_egio.amount)/10000,0) as egio_amount,
+coalesce((sum(t_egio.amount)/10000)* 0.00009,0) as egio_USD,
 
-coalesce(sum(t_spf.spf_amount)/1000000,0) as spf_amount,
-coalesce((sum(t_spf.spf_amount)/1000000 * 0.063),0) as spf_USD,
+coalesce(sum(t_ergopad.amount)/100,0) as ergopad_amount,
+coalesce((sum(t_ergopad.amount)/100 * 0.006),0) as ergopad_USD,
 
-coalesce(sum(t_neta.neta_amount)/1000000,0) as neta_amount,
-coalesce((sum(t_neta.neta_amount)/1000000 * 0.0034),0) as neta_USD,
+coalesce(sum(t_spf.amount)/1000000,0) as spf_amount,
+coalesce((sum(t_spf.amount)/1000000 * 0.063),0) as spf_USD,
 
-coalesce(sum(t_sigUSD.sigUSD_amount)/100,0) as sigUSD_amount,
+coalesce(sum(t_neta.amount)/1000000,0) as neta_amount,
+coalesce((sum(t_neta.amount)/1000000 * 0.0034),0) as neta_USD,
+
+coalesce(sum(t_sigUSD.amount)/100,0) as sigUSD_amount,
 
 no.address
 
@@ -55,37 +66,37 @@ on i.box_id = no.box_id
 Add a new join and token ID plus name for each token you want to track. 
 Need to add to initial select aswell
 */
-left join(select box_id, node_assets.value as paideia_amount
+left join(select box_id, node_assets.value as amount
 		 from node_assets
 		 where token_id = '1fd6e032e8476c4aa54c18c1a308dce83940e8f4a28f576440513ed7326ad489' 
 		 and node_assets.value is not Null) t_paideia
 		 on t_paideia.box_id=no.box_id
 		 
-left join(select box_id, node_assets.value as ergopad_amount
+left join(select box_id, node_assets.value as amount
 		 from node_assets
 		 where token_id = 'd71693c49a84fbbecd4908c94813b46514b18b67a99952dc1e6e4791556de413' 
 		 and node_assets.value is not Null) t_ergopad
 		 on t_ergopad.box_id=no.box_id
 		 
-left join(select box_id, node_assets.value as egio_amount
+left join(select box_id, node_assets.value as amount
 		 from node_assets
 		 where token_id = '00b1e236b60b95c2c6f8007a9d89bc460fc9e78f98b09faec9449007b40bccf3' 
 		 and node_assets.value is not Null) t_egio
 		 on t_egio.box_id=no.box_id
 		 
-left join(select box_id, node_assets.value as spf_amount
+left join(select box_id, node_assets.value as amount
 		 from node_assets
 		 where token_id = '9a06d9e545a41fd51eeffc5e20d818073bf820c635e2a9d922269913e0de369d' 
 		 and node_assets.value is not Null) t_spf
 		 on t_spf.box_id=no.box_id
 		 
-left join(select box_id, node_assets.value as neta_amount
+left join(select box_id, node_assets.value as amount
 		 from node_assets
 		 where token_id = '472c3d4ecaa08fb7392ff041ee2e6af75f4a558810a74b28600549d5392810e8' 
 		 and node_assets.value is not Null) t_neta
 		 on t_neta.box_id=no.box_id
 		 
-left join(select box_id, node_assets.value as sigUSD_amount
+left join(select box_id, node_assets.value as amount
 		 from node_assets
 		 where token_id = '03faf2cb329f2e90d6d23b58d91bbb6c046aa143261cc21f52fbe2824bfcbf04' 
 		 and node_assets.value is not Null) t_sigUSD
