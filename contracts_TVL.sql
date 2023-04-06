@@ -30,6 +30,12 @@ change usd value (multiplier) at time of running query
  + coalesce(sum(t_ergopad.amount)/100 * 0.006,0)
  + coalesce(sum(t_spf.amount)/1000000 * 0.063,0)
  + coalesce(sum(t_neta.amount)/1000000 * 0.0034,0)
+ + coalesce((sum(t_thz.amount)/10000 * 0.0031),0)
+ + coalesce((sum(t_epos.amount)/10000 * 0.0008),0)
+ + coalesce((sum(t_quacks.amount)/1000000 * 0.152),0) 
+ + coalesce((sum(t_cypx.amount)/10000 * 0.0011),0)
+ + coalesce((sum(t_exle.amount)/10000 * 0.0025),0)
+ + coalesce((sum(t_aht.amount)/10000 * 0.0009),0)
  + coalesce(sum(t_sigUSD.amount)/100,0)) as TVL_USD,
 
 coalesce(sum(no.value)/1000000000,0) as ERG_amount,
