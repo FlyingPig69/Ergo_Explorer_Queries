@@ -45,4 +45,8 @@ Known Issue:
 Ergopad query pulls in a few less tokens than expected (~10) but for the addresses I checked it's correct. 
 It includes burnt tokens (address=NULL)
 
+**Ergopad Vesting - Claimed and veted amounts:**:
+
+Extracts all Ergopad Vesting keys and outputs original value (vested amount), current value (left to be claimed), start date and duration of vesting.
+
 
